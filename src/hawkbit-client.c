@@ -765,7 +765,7 @@ static gboolean hawkbit_pull_cb(gpointer user_data)
                                 //TODO: implement me
                                 g_warning("cancel action not supported");
                         }
-
+                        g_object_unref(json_root);
                         g_object_unref(json_response_parser);
                 }
 
